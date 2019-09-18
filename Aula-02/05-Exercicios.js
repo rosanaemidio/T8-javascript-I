@@ -1,9 +1,32 @@
 // Escreva a expressão em que atribui o
 // valor `1` a `x` se `x` maior do que `y`.
 
+	let x=5
+	let y=3
+
+	console.log('O x é inicialmente',x)
+	if(x>y)  {
+		x=1
+		console.log('agora é,'x)
+	}
+	else {
+		console.log("falso")
+	}
+	
+	
+
 //Agora reescreva a expressão anterior
 //atribuindo 0 a `x` caso ele seja menor ou igual a y
-
+let x=9
+let y=9
+	console.log('o x é inicialmente',x)
+if(x<=y) {
+	x=0
+	console.log('Agora é',x)
+}
+	else{
+		console.log('falso')
+	}
 
 // Você foi contratada para desenvolver um jogo,
 // a cada vez que o usuário acerta, ele ganha 5 pontos.
@@ -13,12 +36,32 @@
 // o código para implementar a lógica que calcula esse 
 // score
 
+	let score = 0
+	let pontuacao=5
+
+	function jogar (acertou){
+		acertou = Boolean(Math.floor(Math.random()*2))
+		acertou?console.log("Você acertou"):console.log('você errou! :(')
+		if (acertou){
+			if (score <=100|| score>250){
+				score= score + pontuacao
+				console.log ('0 score corrigido é (+5)', score)
+			} else if (score>100 && score <=250){
+				score = score + pontuacao*2
+				console.log('O score corrigido é (+10)')
+			}
+		}
+	}
+	
+
+ 
 
 // Reescreva a seguinte condicional
 // sem usar o operador `!`:
 // item = ! ( i < 10 || v >= 50 )
 
-
+	 ! ( i < 10 || v >= 50
+	 
 // refs: 
 // - http://www.math.toronto.edu/preparing-for-calculus/3_logic/we_3_negation.html
 // - https://centraldefavoritos.com.br/2017/01/02/negacao-de-proposicoes/ (ver: "Negação de uma Proposição Disjuntiva")
@@ -36,7 +79,7 @@
 // forem negativos.
 
 
-// Escreva a expressão em que retorna `true` se
+// Escreva a ex9pressão em que retorna `true` se
 // dois números tiverem os mesmos
 // sinais (+ / -) e `false` 
 // se tiverem sinais
