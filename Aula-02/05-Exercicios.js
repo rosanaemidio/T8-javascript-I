@@ -172,6 +172,30 @@ if (rand === 0) {
 // 		throw "Dia inválido!"
 // }
 
+ 
+ if (day ==0) {
+ 		console.log("Segunda")}
+	else if (day ==1){
+ 		console.log("Terça")}
+
+	else if (day ==2){
+		console.log("Quarta")}
+// 		break
+// 	case 3:
+// 		console.log("Quinta")
+// 		break
+// 	case 4:
+// 		console.log("Sexta")
+// 		break
+// 	case 5:
+// 		console.log("Sábado")
+// 		break
+// 	case 6:
+// 		console.log("Domingo")
+// 		break
+// 	default:
+// 		throw "Dia inválido!"
+// }
 
 // Reescreva a próxima expressão usando
 // o operador ternário
@@ -181,6 +205,8 @@ if (rand === 0) {
 // } else {
 // 	rand = false
 // }
+let rand= (Math.random () > 0.5)  ?true :false
+
 
 
 // Reescreva a próxima expressão usando
@@ -193,6 +219,8 @@ if (rand === 0) {
 // } else if (b > r && b > g) {
 // 	color = "Azul"
 // }
+let color = (r> g && r > b) ?"vermelho" : (g > b && g > r)?"verde":(b > r && b > g)?"Azul"
+
 
 
 // Lembra do exercício de par ou ímpar, vamos incrementar?
@@ -203,6 +231,19 @@ if (rand === 0) {
 // Dicas: 
 //  - Use a função Math.random() para gerar um número inteiro aleatório
 //  - Use o prompt() para coletar o número informado pelo usuário
+let opcaoUsuario ='par'
+let numUsuario = 1
+
+let numComp = Math.floor (Math.random()*2)
+let resultadoPar = (numUsuario + numComp)%2 == 0
+
+if (opcaoUsuario == 'par' && resultadoPar == true){
+	console.log ('Você ganhou!')
+}else if (opcaoUsuario == 'ímpar' && resultadoPar == false){
+	console.log ('Você ganhou!')
+}else{
+	console.log('Chora nenem!')
+}
 
 
 // Construa a logica do menu de clientes de um site
