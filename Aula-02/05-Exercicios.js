@@ -59,8 +59,11 @@ if(x<=y) {
 // Reescreva a seguinte condicional
 // sem usar o operador `!`:
 // item = ! ( i < 10 || v >= 50 )
-
-	 ! ( i < 10 || v >= 50
+	let i=2
+	let v=56
+	item = ! ( i < 10 || v >= 50 )
+	item1 = (i >= 10 && v < 50)
+	 
 	 
 // refs: 
 // - http://www.math.toronto.edu/preparing-for-calculus/3_logic/we_3_negation.html
@@ -72,14 +75,29 @@ if(x<=y) {
 // se o número for par e `impar`
 // se for impar.
 
+let parImpar= prompt ("Digite um número")
+let numero= parImpar%2 == 0
+	if (numero){
+		console.log ('par')		
+	} 
+	else {
+		console.log ('ímpar')		
+	}
+
 
 // Escreva a expressão que retorna `positivo` 
 // se dois números forem positivos
 // e `negativo` se dois números 
 // forem negativos.
+let x
+let y
+if (x>=0 && y>=0) {
+	console.log('Positivo')
+} else(x<0 && y<0){
+	console.log('Negativo')
+}
 
-
-// Escreva a ex9pressão em que retorna `true` se
+// Escreva a expressão em que retorna `true` se
 // dois números tiverem os mesmos
 // sinais (+ / -) e `false` 
 // se tiverem sinais
