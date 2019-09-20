@@ -32,4 +32,27 @@ while (meta<=1000){
     let passos=parseInt(prompt('Informe quantos passos vc deu:')) 
     meta= meta+passos
     console.log('você já andou,'meta,'passos')
+    meta>=1000 ? console.log('uhuuul') : console.log('Continue a caminhar')
+}
+
+//ARRAYS 
+//São listas que podem ser numeros, strings ou o que vc quiser.
+//sintaxe --->>> crio uma variável e o valor atribuo entre []
+// Ex: let num=[1,2,3,4]
+//Para acessar um valor da lista eu chamo --->> num[2] = 3, pq começo a contar do 0
+
+let lista = [1,2,3,4,5,6,7]
+
+let frutas = [bananas,maça, mamão]
+
+//Dom é a página = documento;
+
+// for it é usado p/ achar um item na lista.
+//p/ percorrer os items da Arrays eu uso o for
+ //Ex:
+
+let listaNumero=[1,2,3,4,5]
+for (let i=0;i<listaNumero.length; i++){
+    console.log('indice:',i,'valor:', listaNumero[i])
+    listaNumero[i]===3?'uhuul' :'deu ruim!'
 }

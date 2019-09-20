@@ -141,7 +141,7 @@ for (let i=1; i<=1000;i++){
 // no console:
 // 1******
 // 12*****
-// 123****
+// 123***
 // 1234***
 // 12345**
 // 123456*
@@ -160,3 +160,19 @@ for (let i=1; i<=1000;i++){
 //pessoa convidada foi encontrado. Caso tenha sido encontrado,
 // mostre a mensagem 'Seja bemvindo, <convidado>!'
 //listaConvidados = ['Alice','João','Maria Rita', 'Sueli','Carlos'] 
+let listaConvidados = ['Alice','João','Maria Rita', 'Sueli','Carlos']
+//eu tenho que criar um prompt onde vai entrar o nome de alguém;
+//tenho que percorrer os índices, pra ver se o nome esta na lista 
+//Se o nome estiver na lista aparece a frase. 
+let convidado= prompt('Insira o nome do convidado')
+
+let encontrado =false
+
+for(let i=0; i<listaConvidados.length; i++){
+    
+    if (convidado == listaConvidados[i]){
+        encontrado= true
+        break
+    }   
+}
+encontrado?console.log(`Seja bem vindo´, ${convidado}) : console.log('Este nome não está na lista')
