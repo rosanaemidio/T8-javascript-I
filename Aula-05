@@ -1,7 +1,7 @@
-//O 'for' é feito para perc orrer uma lista.
+//O 'for' (ou traduzido p/port. para) é feito para percorrer uma lista.
 //onde é:
-//for (inicio; condição para fim ; passo)
-//ex: for (let i=0; i < 10; i++)
+//for (inicio; condição para fim ; passo "encremento")
+ex: for (let i=0; i < 10; i++)
 
 
 Exercícios:
@@ -12,4 +12,24 @@ for (let i=1; i<11; i++){
 
 for (let i=10; i>=0; i=i-2){
     console.log(i)
+}
+
+//Quando for fazer um loop onde eu vá rodar somas e outras operações, a variável tem que ser colocada no global (fora da função).
+ex:  let soma =0 //GLOBAL
+for (i=0; i<=100; i=i+1){ //RODA AS OPERAÇÕES QUE ESTÃO NO BLOCO
+    console.log(soma)
+    soma=soma+i
+}
+
+
+
+//Algoritmo que conta passos, até mil passos.
+//while significa enquanto
+//While (condição){rotina}
+let meta = 0
+
+while (meta<=1000){
+    let passos=parseInt(prompt('Informe quantos passos vc deu:')) 
+    meta= meta+passos
+    console.log('você já andou,'meta,'passos')
 }
